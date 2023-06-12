@@ -1,3 +1,5 @@
+/* * {background-color: #FCF6F5;} */
+
 @font-face {
     font-family: 'Urban Decay';
     src: url('fonts/urban-decay.ttf') format('truetype');
@@ -10,4 +12,34 @@
 
     font-family: 'Urban Decay', sans-serif;
     color: #2BAE66;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    background-color: #2BAE66;
+    /* width: 100%; */
+}
+
+.navbar a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px
+}
+
+.navbar a:hover {
+
+    background-color: #28a35f;
+    color: white;
+
 }
