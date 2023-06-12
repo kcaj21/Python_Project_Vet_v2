@@ -16,7 +16,7 @@ CREATE TABLE animals (
     treatment_notes VARCHAR(255),
     vet_id INT NOT NULL REFERENCES vets(id) ON DELETE CASCADE
 );
-
+ 
 INSERT INTO vets (name, description) VALUES ('Dr Ink', 'More likely to anaesthetise themselves before the animal');
 
 
