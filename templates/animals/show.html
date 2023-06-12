@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+    <p>Name: {{animal.name}}</p>
+    <p>Type: {{animal.type}}</p>
+    <p>Owner Contact Number: {{animal.contact_details}}</p>
+    <p>Date of Birth: {{animal.date_of_birth}}</p>
+    <p>Treatment Notes: {{animal.treatment_notes}}</p>
+    <p>Vet: {{animal.vet.name}}</p>
+    <p><a href="/animals/{{animal.id}}/update">Update</a></p>
+</div>
+
+<form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
+    <button class="delete_btn"><i class="fa fa-sign-out" style="color:rgb(22, 179, 108)"></i> Check-out</button>
+</form>
+
+{% endblock %}

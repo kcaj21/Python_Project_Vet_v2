@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<hr>
+
+{% for vet in all_vets %}
+
+<div class="vet_name">Name:
+    {{vet.name}}
+</div>
+
+<div class="vet_description">description:
+    {{vet.description}}
+</div>
+
+{% endfor %}
+{% endblock %}
