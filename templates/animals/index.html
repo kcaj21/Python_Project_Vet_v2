@@ -3,25 +3,26 @@
 {% block content %}
 
 {% for animal in all_animals %}
-<div class="animal">
 
-        <a href="/animals/{{animal.id}}">{{animal.name}}</a>
+<div class="animal_container">
+    <div class="animal">
+
+            <a href="/animals/{{animal.id}}">{{animal.name}}</a>
+    </div>
+
+    <br>
+
+    <div class="type">Type:
+        {{animal.type}}
+    </div>
+
+    <br>
+
+    <div class="Vet">Vet:
+        {{animal.vet.name}}
+    </div>
+    <br>
 </div>
-
-<br>
-
-<div class="type">Type:
-    {{animal.type}}
-</div>
-
-<br>
-
-<div class="Vet">Vet:
-    {{animal.vet.name}}
-</div>
-
-<br>
-
 
 {% endfor %}
 {% endblock %}

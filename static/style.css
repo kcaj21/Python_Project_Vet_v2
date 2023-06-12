@@ -43,3 +43,11 @@
     color: white;
 
 }
+
+.animal_container {
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #28a35f;
+    text-align: center;
+}
