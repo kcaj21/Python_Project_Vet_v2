@@ -22,10 +22,12 @@ def add_animal():
     contact_details = request.form["contact_details"]
     date_of_birth = request.form["date_of_birth"]
     treatment_notes = request.form["treatment_notes"]
+    check_in_date = request.form["check_in_date"]
+    check_out_date = request.form["check_out_date"]
     vet_id = request.form["vet_id"]
 
     vet = vet_repository.select(vet_id)
-    animal = Animal(name, type, contact_details, date_of_birth, treatment_notes, vet)
+    animal = Animal(name, type, contact_details, date_of_birth, treatment_notes, check_in_date, check_out_date, vet)
 
     animal_repository.add_animal(animal)
     return redirect ("/animals")
@@ -48,10 +50,12 @@ def update_animal(id):
     contact_details = request.form["contact_details"]
     date_of_birth = request.form["date_of_birth"]
     treatment_notes = request.form["treatment_notes"]
+    check_in_date = request.form["check_in_date"]
+    check_out_date = request.form["check_out_date"]
     vet_id = request.form["vet_id"]
 
     vet = vet_repository.select(vet_id)
-    animal = Animal(name, type, contact_details, date_of_birth, treatment_notes, vet, id)
+    animal = Animal(name, type, contact_details, date_of_birth, treatment_notes, check_in_date, check_out_date, vet, id)
 
     animal_repository.update(animal)
     return redirect ("/animals")

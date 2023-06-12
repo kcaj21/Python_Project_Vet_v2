@@ -28,6 +28,17 @@
     <label for="treatment_notes"> Treatment Notes</label>
     <input type="text" id="treatment_notes" name="treatment_notes" required>
 </div>
+
+<div>
+    <label for="check_in_date"> Check-in Date</label>
+    <input type="date" id="check_in_date" name="check_in_date" required>
+</div>
+
+<div>
+    <label for="check_out_date"> Check-out Date</label>
+    <input type="date" id="check_out_date" name="check_out_date" required>
+</div>
+
     <label for="vet">Vet:</label>
     <select id="vet" name="vet_id">
         {% for vet in all_vets %}

@@ -8,12 +8,14 @@
     <p>Owner Contact Number: {{animal.contact_details}}</p>
     <p>Date of Birth: {{animal.date_of_birth}}</p>
     <p>Treatment Notes: {{animal.treatment_notes}}</p>
+    <p>Check-in Date: {{animal.check_in_date}}</p>
+    <p>Check-out Date: {{animal.check_out_date}}</p>
     <p>Vet: {{animal.vet.name}}</p>
     <p><a href="/animals/{{animal.id}}/update">Update</a></p>
 </div>
 
 <form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
-    <button class="delete_btn"><i class="fa fa-sign-out" style="color:rgb(22, 179, 108)"></i> Check-out</button>
+    <button class="delete_btn"><i class="fa fa-sign-out" style="color:rgb(195, 29, 29)"></i> Delete</button>
 </form>
 
 {% endblock %}

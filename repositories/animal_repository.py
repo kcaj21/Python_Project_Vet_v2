@@ -13,7 +13,7 @@ def select_all():
     
     for row in results:
         vet = vet_repository.select(row["vet_id"])
-        animal = Animal(row['name'], row['type'], row['contact_details'], row ['date_of_birth'], row['treatment_notes'], vet, row['id'])
+        animal = Animal(row['name'], row['type'], row['contact_details'], row ['date_of_birth'], row['treatment_notes'], row['check_in_date'], row['check_out_date'], vet, row['id'])
         animals.append(animal)
     return animals
 
@@ -22,8 +22,8 @@ def delete_all():
     run_sql(sql)
 
 def add_animal(animal):
-    sql = "INSERT into animals (name, type, contact_details, date_of_birth, treatment_notes, vet_id) VALUES (%s, %s, %s, %s, %s, %s) RETURNING *"
-    values = [animal.name, animal.type, animal.contact_details, animal.date_of_birth, animal.treatment_notes, animal.vet.id]
+    sql = "INSERT into animals (name, type, contact_details, date_of_birth, treatment_notes, check_in_date, check_out_date,vet_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s) RETURNING *"
+    values = [animal.name, animal.type, animal.contact_details, animal.date_of_birth, animal.treatment_notes, animal.check_in_date, animal.check_out_date, animal.vet.id]
     results = run_sql(sql, values)
     id = results[0]['id']
     animal.id = id
@@ -37,7 +37,7 @@ def select(id):
 
     if result is not None:
         vet = vet_repository.select(result["vet_id"])
-        animal = Animal(result["name"], result["type"], result["contact_details"], result["date_of_birth"], result["treatment_notes"], vet, result["id"])
+        animal = Animal(result["name"], result["type"], result["contact_details"], result["date_of_birth"], result["treatment_notes"], result["check_in_date"], result["check_out_date"], vet, result["id"])
     return animal
 
 def delete(id):
@@ -46,6 +46,6 @@ def delete(id):
     run_sql(sql, values)
 
 def update(animal):
-    sql = "UPDATE animals SET (name, date_of_birth, type, contact_details, treatment_notes, vet_id) = (%s, %s, %s, %s, %s, %s) WHERE id = (%s)"
-    values = [animal.name, animal.date_of_birth, animal.type, animal.contact_details, animal.treatment_notes, animal.vet.id, animal.id]
+    sql = "UPDATE animals SET (name, date_of_birth, type, contact_details, treatment_notes, check_in_date, check_out_date vet_id) = (%s, %s, %s, %s, %s, %s, %s, %s) WHERE id = (%s)"
+    values = [animal.name, animal.date_of_birth, animal.type, animal.contact_details, animal.treatment_notes, animal.check_in_date, animal.check_out_date, animal.vet.id, animal.id]
     run_sql(sql, values)
