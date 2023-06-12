@@ -1,4 +1,6 @@
-/* * {background-color: #FCF6F5;} */
+body {
+    background-color: #FCF6F5;
+}
 
 @font-face {
     font-family: 'Urban Decay';
@@ -49,5 +51,12 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
     color: #28a35f;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.animal a {
+    color: #28a35f;
+    font-size: 32px
 }
