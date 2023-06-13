@@ -46,6 +46,13 @@ body {
 
 }
 
+.navlogo {
+    
+
+    object-fit:cover;
+
+}
+
 .animal_container {
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
