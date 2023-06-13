@@ -5,6 +5,7 @@
 <div class="show_animal_container_head">
     <p>Name: {{animal.name}}</p>
     <p>Type: {{animal.type}}</p>
+    <p>Vet: {{animal.vet.name}}</p>
     <p>Treatment Notes: {{animal.treatment_notes}}</p>
 </div>
 <div class="show_animal_container_body">
@@ -12,15 +13,13 @@
     <p>Date of Birth: {{animal.date_of_birth}}</p>
     <p>Check-in Date: {{animal.check_in_date}}</p>
     <p>Check-out Date: {{animal.check_out_date}}</p>
-    <p>Vet: {{animal.vet.name}}</p>
-
+    
+    <form class="update_animal" action="/animals/{{animal.id}}/update" method="get">
+        <button class="final_update_btn"><i class="fa fa-pencil-square" style="color:rgb(244, 237, 236)"></i> Update</button>
+    </form>
 
     <form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
         <button class="final_delete_btn"><i class="fa fa-sign-out" style="color:rgb(195, 29, 29)"></i> Delete</button>
-    </form>
-
-    <form class="update_animal" action="/animals/{{animal.id}}/update" method="get">
-        <button class="final_update_btn"><i class="fa fa-pencil-square" style="color:rgb(35, 175, 112)"></i> Update</button>
     </form>
 </div>
 {% endblock %}
