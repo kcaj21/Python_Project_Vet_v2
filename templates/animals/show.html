@@ -5,9 +5,11 @@
 <div class="show_animal_container_head">
     <p>Name: {{animal.name}}</p>
     <p>Type: {{animal.type}}</p>
-    <p>Vet: {{animal.vet.name}}</p>
-    <p>Treatment Notes: {{animal.treatment_notes}}</p>
+    <p>{{animal.treatment_notes}}
+    <p>with</p>
+    <p>{{animal.vet.name}}</p>
 </div>
+
 <div class="show_animal_container_body">
     <p>Owner Contact Number: {{animal.contact_details}}</p>
     <p>Date of Birth: {{animal.date_of_birth}}</p>
@@ -19,7 +21,7 @@
     </form>
 
     <form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
-        <button class="final_delete_btn"><i class="fa fa-sign-out" style="color:rgb(195, 29, 29)"></i> Delete</button>
+        <button class="final_delete_btn"><i class="fa fa-trash" style="color:rgb(195, 29, 29)"></i> Delete</button>
     </form>
 </div>
 {% endblock %}

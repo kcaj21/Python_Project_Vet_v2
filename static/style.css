@@ -58,7 +58,6 @@ body {
     
 }
 
-
 .animal_container a {
     color: #2BAE66;
     font-size: xx-large;
@@ -102,8 +101,6 @@ input[type=date] {
     border-style: none;
     border-radius: 6px;
     margin: 10px
-
-
 }
 
 
@@ -232,7 +229,6 @@ input[type=date] {
     border-style: None;
     border-radius: 6px;
     font-size: 32px;
-
 }
 .final_update_btn:hover {
     background-color:#00893e;
@@ -247,8 +243,7 @@ input[type=date] {
     font-weight: 800;
     font-size: xx-large;
     color: #28a35f;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .vet_bio {
@@ -262,9 +257,5 @@ input[type=date] {
     text-align: center;
     border-style: none;
     border-radius: 6px;
-    background-color: #ffffff;
-    
+    background-color: #ffffff; 
 }
-
-
-

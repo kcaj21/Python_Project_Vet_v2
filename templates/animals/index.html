@@ -5,11 +5,11 @@
 {% for animal in all_animals %}
 
 <div class="animal_container">
-                <div class="animal_details">
-                <a href="/animals/{{animal.id}}">{{animal.name}}</a>
-                <h1>{{animal.type}}</h1>
-                <h2>Vet: {{animal.vet.name}}</h2>
-                </div>
+    <div class="animal_details">
+        <a href="/animals/{{animal.id}}">{{animal.name}}</a>
+        <h1>{{animal.type}}</h1>
+        <h2>Vet: {{animal.vet.name}}</h2>
+        </div>
 </div>
 
 {% endfor %}
