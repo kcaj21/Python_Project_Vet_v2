@@ -20,6 +20,11 @@ CREATE TABLE animals (
 );
 
 INSERT INTO vets (name, description) VALUES ('Dr Ink', 'More likely to anaesthetise themselves before the animal');
+-- INSERT INTO vets (name, description) VALUES ('Dr Robotnik', 'A miserly, sadistic man. Absolutely will not treat headgehogs.');
+-- INSERT INTO vets (name, description) VALUES ('Dr Zoidberg', 'Easily startled and fiendishly hungry.');
+-- INSERT INTO vets (name, description) VALUES ('Dr Dolittle', 'An actual vet.');
+-- INSERT INTO vets (name, description) VALUES ('Dr Dre', 'Great with doggs.');
+
 
 
 INSERT INTO animals (name, type, contact_details, date_of_birth, treatment_notes, check_in_date, check_out_date, vet_id) VALUES ('Barney', 'Dinosaur', '+447123456789', '1992-04-06', 'Prosthetic tail insertion', '2023-04-06', '2023-05-07', 1);
@@ -30,7 +35,8 @@ INSERT INTO animals (name, type, contact_details, date_of_birth, treatment_notes
 
 
 -- DELETE FROM animals WHERE name = 'Barney';
--- DELETE FROM vets WHERE id = 7;
+DELETE FROM vets WHERE id = 5;
+-- DELETE FROM vets WHERE id = 6;
 SELECT * FROM vets;
 
 SELECT * FROM animals;

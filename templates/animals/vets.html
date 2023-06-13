@@ -2,16 +2,14 @@
 
 {% block content %}
 
-<hr>
 
 {% for vet in all_vets %}
 
 <div class="vet_name">
-    <p>Name: {{vet.name}}</p>
+    <p>{{vet.name}}</p>
 </div>
 
 <div class="vet_bio">
-    <p>Bio: </p>
     <p>{{vet.description}}</p>  
 </div>
 
