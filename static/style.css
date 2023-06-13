@@ -136,3 +136,41 @@ input[type=date] {
     margin: 5px 330px;
 
 }
+
+.show_animal_container_head{
+    margin: auto;
+    width: 50%;
+    /* border: 4px solid #28a35f; */
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: xx-large;
+    color: #28a35f;
+    text-align: center;
+}
+
+.show_animal_container_body{
+    margin: auto;
+    width: 50%;
+    /* border: 4px solid #28a35f; */
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: large;
+    color: #28a35f;
+    text-align: center;
+}
+
+/* .update_btn {
+    width: 25%;
+    padding: 10px;
+    margin: -10px 530px;
+
+} */
+
+.delete_btn {
+    width: 25%;
+    padding: 10px;
+    margin: -10px 530px;
+
+}

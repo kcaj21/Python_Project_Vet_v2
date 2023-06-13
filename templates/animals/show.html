@@ -2,12 +2,14 @@
 
 {% block content %}
 
-<div class="show_animal_container">
+<div class="show_animal_container_head">
     <p>Name: {{animal.name}}</p>
     <p>Type: {{animal.type}}</p>
+    <p>Treatment Notes: {{animal.treatment_notes}}</p>
+</div>
+<div class="show_animal_container_body">
     <p>Owner Contact Number: {{animal.contact_details}}</p>
     <p>Date of Birth: {{animal.date_of_birth}}</p>
-    <p>Treatment Notes: {{animal.treatment_notes}}</p>
     <p>Check-in Date: {{animal.check_in_date}}</p>
     <p>Check-out Date: {{animal.check_out_date}}</p>
     <p>Vet: {{animal.vet.name}}</p>
