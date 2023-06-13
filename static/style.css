@@ -25,7 +25,6 @@ body {
     justify-content: space-evenly;
     padding-top: 10px;
     background-color: #2BAE66;
-    /* width: 100%; */
 }
 
 .navbar a {
@@ -46,13 +45,6 @@ body {
 
 }
 
-.navlogo {
-    
-
-    object-fit:cover;
-
-}
-
 .animal_container {
     padding: 50px;
     font-family: 'Courier New', Courier, monospace;
@@ -66,4 +58,49 @@ body {
 .animal a {
     color: #28a35f;
     font-size: 32px
+}
+
+.add_container{
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    margin: 8px 0;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #28a35f;
+    
+}
+
+input[type=text] {
+    width: 100%;
+    border-style: none;
+    border-radius: 6px;
+
+}
+
+input[type=date] {
+    width: 100%;
+    border-style: none;
+    border-radius: 6px;
+
+}
+
+
+#vet{
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+} 
+
+button {
+
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    margin: 8px 20px;
+    
 }
