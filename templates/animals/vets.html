@@ -6,12 +6,13 @@
 
 {% for vet in all_vets %}
 
-<div class="vet_name">Name:
-    {{vet.name}}
+<div class="vet_name">
+    <p>Name: {{vet.name}}</p>
 </div>
 
-<div class="vet_description">Bio:
-    {{vet.description}}
+<div class="vet_bio">
+    <p>Bio: </p>
+    <p>{{vet.description}}</p>  
 </div>
 
 {% endfor %}

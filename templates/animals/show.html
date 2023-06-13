@@ -13,11 +13,14 @@
     <p>Check-in Date: {{animal.check_in_date}}</p>
     <p>Check-out Date: {{animal.check_out_date}}</p>
     <p>Vet: {{animal.vet.name}}</p>
-    <p><a href="/animals/{{animal.id}}/update">Update</a></p>
 </div>
 
 <form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
     <button class="delete_btn"><i class="fa fa-sign-out" style="color:rgb(195, 29, 29)"></i> Delete</button>
+</form>
+
+<form class="update_animal" action="/animals/{{animal.id}}/update" method="get">
+    <button class="update_btn"><i class="fa fa-pencil-square" style="color:rgb(35, 175, 112)"></i> Update</button>
 </form>
 
 {% endblock %}

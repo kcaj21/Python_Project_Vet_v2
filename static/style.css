@@ -161,16 +161,42 @@ input[type=date] {
     text-align: center;
 }
 
-/* .update_btn {
-    width: 25%;
-    padding: 10px;
-    margin: -10px 530px;
-
-} */
-
 .delete_btn {
     width: 25%;
     padding: 10px;
-    margin: -10px 530px;
+    margin: -20px 530px;
 
+}
+
+.update_btn {
+    width: 25%;
+    padding: 10px;
+    margin: 20px 530px;
+
+}
+
+.vet_name {
+    margin: 0px 300px;
+    width: 50%;
+    /* border: 4px solid #28a35f; */
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: xx-large;
+    color: #28a35f;
+    text-align: center;
+    
+}
+
+.vet_bio {
+    margin: 0px 300px;
+    width: 50%;
+    /* border: 4px solid #28a35f; */
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: large;
+    color: #28a35f;
+    text-align: center;
+    
 }
