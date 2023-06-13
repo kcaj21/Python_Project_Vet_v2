@@ -1,57 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
 
-<header> <p>{{animal.name}}</p></header>
+<header class="update_header"> <p>{{animal.name}}</p></header>
 <form action="/animals/{{animal.id}}" method="post">
 
-<div>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required autufocus>
-</div>
+<div class="update_container">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autufocus>
+    </div>
 
-<div>
-    <label for="type">Type</label>
-    <input type="text" id="type" name="type" required>
-</div>
+    <div>
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" required>
+    </div>
 
-<div>
-    <label for="contact_details">Contact Details</label>
-    <input type="text" id="contact_details" name="contact_details" required>
-</div>
+    <div>
+        <label for="contact_details">Contact Details</label>
+        <input type="text" id="contact_details" name="contact_details" required>
+    </div>
 
-<div>
-    <label for="date_of_birth"> Date of Birth</label>
-    <input type="date" id="date_of_birth" name="date_of_birth" required>
-</div>
+    <div>
+        <label for="date_of_birth"> Date of Birth</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+    </div>
 
-<div>
-    <label for="treatment_notes"> Treatment Notes</label>
-    <input type="text" id="treatment_notes" name="treatment_notes" required>
-</div>
+    <div>
+        <label for="treatment_notes"> Treatment Notes</label>
+        <input type="text" id="treatment_notes" name="treatment_notes" required>
+    </div>
 
-<div>
-    <label for="check_in_date"> Check-in Date</label>
-    <input type="date" id="check_in_date" name="check_in_date" required>
-</div>
+    <div>
+        <label for="check_in_date"> Check-in Date</label>
+        <input type="date" id="check_in_date" name="check_in_date" required>
+    </div>
 
-<div>
-    <label for="check_out_date"> Check-out Date</label>
-    <input type="date" id="check_out_date" name="check_out_date" required>
-</div>
+    <div>
+        <label for="check_out_date"> Check-out Date</label>
+        <input type="date" id="check_out_date" name="check_out_date" required>
+    </div>
 
-    <label for="vet">Vet:</label>
-    <select id="vet" name="vet_id">
-        {% for vet in all_vets %}
-        <option value="{{ vet.id }}"
-        {% if animal.vet.id== animal.id %} selected="selected"
-        {% endif %}>
-        {{ vet.name }}
-        </option>
-        {% endfor %}
-    </select>
-</div>
+        <label for="vet">Vet:</label>
+        <select id="vet" name="vet_id">
+            {% for vet in all_vets %}
+            <option value="{{ vet.id }}"
+            {% if animal.vet.id== animal.id %} selected="selected"
+            {% endif %}>
+            {{ vet.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
 
-<button type="submit">Update Animal</button>
+<button class="update_animal_btn" type="submit">Update Animal</button>
 
 </form>
 

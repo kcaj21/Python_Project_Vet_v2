@@ -101,10 +101,38 @@ input[type=date] {
 
 } 
 
-button {
+.add_animal_btn {
     width: 100%;
     padding: 20px;
     align-items: center;
     margin: 20px 8px;
     
+}
+
+.update_header {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size:x-large;
+    color: #28a35f;
+    text-align: center;
+}
+
+.update_container{
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    margin: 0px 300px;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    color: #28a35f;
+    
+}
+
+.update_animal_btn{
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+    margin: 5px 330px;
+
 }
