@@ -19,11 +19,12 @@ CRUD actions for vets / animals - remember the user - what would they want to se
 
 Technologies used:
 
-Python
+Python3
 HTML5
 CSS3
 PostgreSQL
 FLASK
+psycopg
 
 Features:
 
