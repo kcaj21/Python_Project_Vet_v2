@@ -20,8 +20,6 @@ updating an animal's details
 deleting an animal
 Viewing vet information
 
-Screenshots:
-
 ![Add Animal](<screenshots/Screenshot 2023-06-14 at 09.25.27.jpg>)
 ![Show Animal](<screenshots/Screenshot 2023-06-14 at 09.26.05.jpg>)
 ![Update Animal](<screenshots/Screenshot 2023-06-14 at 09.26.31.jpg>)
