@@ -2,29 +2,15 @@
 
 THE D4WG POUND is a project creating a vet management app for adding animals into a vet surgery.
 
-The Project Brief:
+Running Instructions:
 
-Vet Management App
-A veterinary practice has approached you to build a web application to help them manage their animals and vets. A vet may look after many animals at a time. An animal is registered with only one vet.
+1. Ensure flask is installed
 
-MVP
-Important information for the vets to know is -
-Name
-Date Of Birth (use a VARCHAR initially)
-Type of animal
-Contact details for the owner
-Treatment notes
-Be able to assign animals to vets
-CRUD actions for vets / animals - remember the user - what would they want to see on each View? What Views should there be?
+2. From the command terminal, navigate into 'python_project_vet_alex'.
 
-Technologies used:
+3. Enter 'flask run' into the command terminal
 
-Python3
-HTML5
-CSS3
-PostgreSQL
-FLASK
-psycopg
+4. Navigate to the URL that appears in the terminal as follows - 'Running on http://...'
 
 Features:
 
@@ -41,12 +27,11 @@ Screenshots:
 ![Update Animal](<screenshots/Screenshot 2023-06-14 at 09.26.31.jpg>)
 ![Show Vets](<screenshots/Screenshot 2023-06-14 at 09.26.47.jpg>)
 
-Running Instructions:
+Technologies used:
 
-1. Ensure flask is installed
-
-2. From the command terminal, navigate into 'python_project_vet_alex'.
-
-3. Enter 'flask run' into the command terminal
-
-4. Navigate to the URL that appears in the terminal as follows - 'Running on http://...'
+Python3
+HTML5
+CSS3
+PostgreSQL
+FLASK
+psycopg
