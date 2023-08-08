@@ -14,11 +14,8 @@ Running Instructions:
 
 Features:
 
-Adding an animal
-Assigning a vet to the animal from a selection of pre-determined vets
-updating an animal's details
-deleting an animal
-Viewing vet information
+Adding an animal, assigning a vet to the animal from a selection of pre-determined vets, updating an animal's details,
+deleting an animal and viewing vet information
 
 ![Add Animal](<screenshots/Screenshot 2023-06-14 at 09.25.27.jpg>)
 ![Show Animal](<screenshots/Screenshot 2023-06-14 at 09.26.05.jpg>)
