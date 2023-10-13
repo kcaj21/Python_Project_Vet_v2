@@ -1,18 +1,5 @@
 {
-    "builds": [
-
-        {
-        "src":"/code/app.py",
-        "use":"@cercel/python"
-        }
-
-    ], 
-
-    "routes": [
-
-        {
-            "src":"/(.*)",
-            "dest":"/code/main.py"
-        }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/code/app" }
     ]
-}
+  }
