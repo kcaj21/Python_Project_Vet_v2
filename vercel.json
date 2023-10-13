@@ -1,10 +1,16 @@
-
-
-  {
+{
+    "version": 2,
     "builds": [
-      {
-        "src": "app.py",
-        "use": "@vercel/python"
-      }
-    ]
+      { "src": "app.py", "use": "@now/python" },
+      { "src": "requirements.txt", "use": "@now/python" },
+      { "src": "*.html", "use": "@now/static" },
+      { "src": "*.css", "use": "@now/static" },
+      { "src": "static/.*", "use": "@now/static" },
+      { "src": "templates/.*", "use": "@now/static" },
+      { "src": "echo 'Build step not needed'", "use": "@now/python" }
+    ],
+    "output": ".",
+    "install": "echo 'No install step required'",
+    "dev": "python app.py"
   }
+  
