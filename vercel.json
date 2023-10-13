@@ -8,8 +8,6 @@
       { "src": "static/.*", "use": "@now/static" },
       { "src": "templates/.*", "use": "@now/static" },
       { "src": "echo 'Build step not needed'", "use": "@now/python" }
-    ],
-    "install": "echo 'No install step required'",
-    "dev": "python app.py"
+    ]
   }
   
