@@ -2,7 +2,7 @@
     "builds": [
 
         {
-        "src":"app.py",
+        "src":"/code/app.py",
         "use":"@cercel/python"
         }
 
@@ -12,7 +12,7 @@
 
         {
             "src":"/(.*)",
-            "dest":"main.py"
+            "dest":"/code/main.py"
         }
     ]
 }
