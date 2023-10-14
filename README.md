@@ -2,7 +2,9 @@
 
 THE D4WG POUND is a project creating a vet management app for adding animals into a vet surgery.
 
-Running Instructions:
+Visit at: https://the-d4wg-pound-8c9a882e2a1b.herokuapp.com/
+
+OR Clone Repo:
 
 1. Ensure flask is installed
 
