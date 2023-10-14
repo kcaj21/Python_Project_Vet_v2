@@ -2,8 +2,6 @@ body {
     background-color: #FCF6F5;
 }
 
-
-
 .home_title {
 
     font-family: 'Urban Decay', sans-serif;
@@ -211,6 +209,7 @@ input[type=date] {
     background-color:#890200;
     transition: 0.2s;
 }
+
 .final_update_btn {
     margin: 20px 0px;
     width: 50%;
@@ -224,6 +223,7 @@ input[type=date] {
     border-radius: 6px;
     font-size: 32px;
 }
+
 .final_update_btn:hover {
     background-color:#00893e;
     transition: 0.2s;
