@@ -10,7 +10,7 @@ Running Instructions:
 
 3. Enter 'flask run' into the command terminal
 
-4. Navigate to the URL that appears in the terminal as follows - 'Running on http://...'
+4. Navigate to localhost:4999 URL'
 
 Features:
 
