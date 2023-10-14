@@ -15,4 +15,22 @@
 
     }
 
+    @font-face {
+        font-family: 'Urban Decay';
+        src: url('fonts/urban-decay.woff2') format('woff2'),
+             url('fonts/urban-decay.woff') format('woff'),
+             url('fonts/urban-decay.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .home_title {
+    
+        font-family: 'Urban Decay', sans-serif;
+        color: #2BAE66;
+        font-size: 125px;
+        text-align: center;
+        padding-top: 150px;
+    }
+
   }
