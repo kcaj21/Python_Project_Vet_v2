@@ -17,11 +17,11 @@
     <p>Check-out Date: {{animal.check_out_date}}</p>
     
     <form class="update_animal" action="/animals/{{animal.id}}/update" method="get">
-        <button class="final_update_btn"><i class="fa fa-pencil-square" style="color:rgb(244, 237, 236)"></i> Update</button>
+        <button class="final_update_btn"><i class="fa fa-pencil-square" style="color:rgb(244, 237, 236)"></i></button>
     </form>
 
     <form class="delete_animal" action="/animals/{{animal.id}}/delete" method="post">
-        <button class="final_delete_btn"><i class="fa fa-trash" style="color:rgb(195, 29, 29)"></i> Delete</button>
+        <button class="final_delete_btn"><i class="fa fa-trash" style="color:rgb(195, 29, 29)"></i></button>
     </form>
 </div>
 {% endblock %}
