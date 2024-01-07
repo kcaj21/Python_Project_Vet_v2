@@ -8,11 +8,9 @@ OR Clone Repo:
 
 1. Ensure flask is installed
 
-2. From the command terminal, navigate into 'python_project_vet_alex'.
+2. Enter 'flask run' into the command terminal
 
-3. Enter 'flask run' into the command terminal
-
-4. Navigate to localhost:4999 URL'
+3. Enter 'localhost:4999' in your preferred web browser
 
 Features:
 
