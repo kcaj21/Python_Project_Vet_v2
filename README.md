@@ -6,7 +6,7 @@ After cloning the Repo:
 
 1. Ensure flask is installed
 
-2. Enter 'flask run' into the command terminal
+2. Enter 'flask run' into the terminal
 
 3. Enter 'localhost:4999' in your preferred web browser
 
