@@ -13,8 +13,8 @@ def run_sql(sql, values = None):
     results = []
     
     try:
-        conn=psycopg2.connect(DATABASE_URL, sslmode='require')
-        #conn=psycopg2.connect("dbname='vet_database'", sslmode='require')
+        # conn=psycopg2.connect(DATABASE_URL, sslmode='require')
+        conn=psycopg2.connect("dbname='vet_database'", sslmode='require')
         cur = conn.cursor(cursor_factory=ext.DictCursor)   
         cur.execute(sql, values)
         conn.commit()
