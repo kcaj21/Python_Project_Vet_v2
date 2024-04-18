@@ -4,11 +4,10 @@ THE D4WG POUND is a project creating a vet management app for adding animals int
 
 After cloning the Repo:
 
-1. Ensure flask is installed
-
-2. Enter 'flask run' into the terminal
-
-3. Enter 'localhost:4999' in your preferred web browser
+1. Ensure pip is installed
+2. Install a few required packages: $ pip install -r requirements.txt
+3. Enter 'flask run' into the terminal
+4. Enter 'localhost:4999' in your preferred web browser
 
 Features:
 
@@ -22,9 +21,7 @@ deleting an animal and viewing vet information
 
 Technologies used:
 
-Python3
-HTML5
-CSS3
+Python
+Flask
 PostgreSQL
-FLASK
 psycopg
