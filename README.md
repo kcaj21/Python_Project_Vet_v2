@@ -2,6 +2,12 @@
 
 THE D4WG POUND is a project creating a vet management app for adding animals into a vet surgery.
 
+#### Tech Stack
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+
 #### Setup
 
 First, ensure pip is installed
@@ -20,9 +26,3 @@ deleting an animal and viewing vet information
 ![Show Animal](<screenshots/Screenshot 2023-06-14 at 09.26.05.jpg>)
 ![Update Animal](<screenshots/Screenshot 2023-06-14 at 09.26.31.jpg>)
 ![Show Vets](<screenshots/Screenshot 2023-06-14 at 09.26.47.jpg>)
-
-#### Tech Stack
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
